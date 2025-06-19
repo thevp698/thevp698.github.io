@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>PyHYSYS – A Framework for Process Optimization</title>
+  <meta name="description" content="Detailed information about the E-commerce Platform project, including features, technologies, and development process.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="project-style.css">
+</head>
+<body>
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="../index.html" class="text-primary font-poppins font-bold text-2xl">Portfolio</a>
+      
+      <!-- Back Button -->
+      <a href="../index.html#portfolio" class="nav-link text-primary font-poppins font-medium">
+        <span class="back-arrow">←</span> Back to Projects
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-detail">
+      <div class="container">
+        <h1 class="project-title">pyhysys API</h1>
+        
+        <div class="project-meta">
+          <div class="project-tags">
+            <span class="project-tag">python</span>
+            <span class="project-tag">Win32</span>
+            <span class="project-tag">GitLab</span>
+            <span class="project-tag">pytesting</span>
+            <span class="project-tag">MatPlotLib</span>
+            <span class="project-tag">plotly</span>
+          </div>
+          </div>
+          
+          <!-- If you have a live demo or repository link -->
+          <div class="project-links">
+            <a href="https://github.com/yourusername/ecommerce" class="btn btn-outline btn-sm" target="_blank">View Repository</a>
+            <!-- <a href="#" class="btn btn-primary btn-sm" target="_blank">Live Demo</a> -->
+          </div>
+        </div>
+        
+        <!-- Feature Image -->
+        <div class="project-feature-image">
+          <img src="images/pyhysys.png" alt="pyhysys Framework Overview" class="feature-img">
+        </div>
+        
+        <div class="project-content">
+          <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+              PyHYSYS is an innovative engineering framework designed to simplify and optimize complex process designs involving multistage unit operations. 
+              It leverages a first-principles optimization approach, breaking down intricate processes into smaller, manageable modules, ensuring precise optimization at each stage.</p>
+          </div>
+          
+          <div class="project-section">
+            <h2>Key Features</h2>
+            <ul class="feature-list">
+              <li>Modular Process Optimization: Enhances reliability and reduces design uncertainties by optimizing discrete process blocks, enabling engineers to make data-driven, actionable decisions.
+              </li>
+              <li>Integration with Aspen HYSYS: Utilizes Aspen HYSYS, an industry-standard simulation tool, 
+                seamlessly integrated with Python via the powerful Win32 framework to automate workflows effectively.
+              </li>
+              <li>Interactive Graph-based Interface: Employs advanced graph methodologies to visually represent complex operational connections, 
+                significantly reducing design redundancy and streamlining user interaction.
+              </li>
+              <li>Custom Python API: Provides a robust API, allowing users to efficiently link existing process elements or build new 
+                processes incorporating advanced optimization algorithms and AI-driven methodologies.</li>
+            </ul>
+          </div>
+        
+          <div class="project-section">
+            <h2>Benefits</h2>
+            <ul class="feature-list">
+              <li>Accelerates the development of new process designs.</li>
+              <li>Eliminates redundant tasks through intelligent automation.</li>
+              <li>Enhances overall process efficiency and performance through optimized workflows.
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="project-section">
+            <h2>Technologies Used</h2>
+            <p>
+              This project utilized Aspen HYSYS as a simulation tool to model the process systems. In addition, we experimented with
+              various optimization tools to solve process optimization problems.
+            </p>
+            <div class="tech-stack">
+              <div class="tech-item">
+                <h3>Tools</h3>
+                <ul>
+                  <li>Git & GitHub for version control</li>
+                  <li>PyTest for testing</li>
+                  <li>Aspen HYSYS for simulation</li>
+                  <li>Win32 for automation</li>
+                  <li>NOMAD, Simcenter Studio & HEEDS for optimization</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-section">
+            <h2>Implementation Details</h2>
+            <p>
+              The project implements various HYSYS components to model and optimize the compression process. Here's an example of how the components are defined:
+            </p>
+            <!-- Example code snippet -->
+            <div class="code-block">
+              <pre><code>
+
+# Element 1: Feed
+FeedCondition(hysys_id = "feed", flowsheet = hysys.flowsheet,
+              temperature = 30,
+              pressure = 101.325,
+              component_mass_flow = (10000, 0.0, 0.0, 0.0)),
+
+# Element 9: Product
+ProductCondition(hysys_id = "product", flowsheet = hysys.flowsheet,
+             temperature=200.0),
+
+# Element 2: Mixer
+Mixer(hysys_id = "mixer_1", flowsheet = hysys.flowsheet),
+
+# Element 3: Pump
+Pump(hysys_id = "pump_1", flowsheet = hysys.flowsheet,
+             pressure_ratio = 2),
+
+# Element 4: Heater
+Heater(hysys_id = "heater_1", flowsheet = hysys.flowsheet,
+              pressure_drop = 10,
+              temperature_increase = 100),
+
+# Element 5: Separator
+Separator(hysys_id = "separator_1", flowsheet = hysys.flowsheet),
+
+# Element 6: Cooler
+Cooler(hysys_id = "cooler_1", flowsheet = hysys.flowsheet,
+              pressure_drop = 10),
+
+# Element 7: Tee  
+Tee(hysys_id = "tee_1", flowsheet = hysys.flowsheet,
+        split_ratio = [0.3]),
+
+# Element 8: Valve
+Valve(hysys_id = "valve_1", flowsheet = hysys.flowsheet,
+            pressure_drop = 10)</code></pre>
+            </div>
+          </div>
+          
+          <div class="project-section">
+            <h2>Process Flowsheet</h2>
+            <div class="flowsheet-visualization">
+              <div class="flowsheet-diagram">
+                <img src="images/connectivity.svg" alt="Process Flowsheet Diagram - Overview" class="flowsheet-img">
+              </div>
+              <div class="flowsheet-diagram">
+                <img src="images/hysys_ui.svg" alt="Process Flowsheet Diagram - Details" class="flowsheet-img">
+              </div>
+            </div>
+          </div>
+        
+        <div class="project-navigation">
+          <div></div> <!-- Empty div to maintain spacing with flexbox -->
+          <a href="../index.html#portfolio" class="nav-btn all-projects">
+            All Projects
+          </a>
+          <a href="project2.html" class="nav-btn next-project">
+            Next Project <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Vraj Patel. All rights reserved.</p>
+        <p>
+          Designed and built with
+          <svg class="heart-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+          </svg>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

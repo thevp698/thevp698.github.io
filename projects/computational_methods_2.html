@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Adaptive Time-Step Analysis for Coupled Nonlinear PDEs using FEM</title>
+  <meta name="description" content="Detailed information about the E-commerce Platform project, including features, technologies, and development process.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="project-style.css">
+  <!-- Add KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <!-- Add KaTeX JavaScript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="../index.html" class="text-primary font-poppins font-bold text-2xl">Portfolio</a>
+      
+      <!-- Back Button -->
+      <a href="../index.html#portfolio" class="nav-link text-primary font-poppins font-medium">
+        <span class="back-arrow">←</span> Back to Projects
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-detail">
+      <div class="container">
+        <h1 class="project-title">Adaptive Time-Step Analysis for Coupled Nonlinear PDEs using FEM</h1>
+          
+          <!-- If you have a live demo or repository link -->
+          <div class="project-links">
+            <a href="https://github.com/yourusername/ecommerce" class="btn btn-outline btn-sm" target="_blank">View Repository</a>
+            <!-- <a href="#" class="btn btn-primary btn-sm" target="_blank">Live Demo</a> -->
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+            Solved complex sets of coupled, nonlinear, time-dependent parabolic partial differential equations (PDEs) using a combination of Forward
+            Euler prediction and Backward Euler correction algorithms. Integrated adaptive time-step control with the Galerkin Finite Element Method (FEM)
+            to effectively model dynamic reaction kinetics.
+            </p>
+          </div>
+          
+          <div class="project-section">
+            <h2>Key Contributions</h2>
+            <ul class="feature-list">
+              <li>Numerical Method Development: Implemented coupled PDE solutions using advanced numerical schemes (Forward Euler Predictor and Backward
+                Euler Corrector). Incorporated adaptive time-stepping to accommodate varying reaction rates effectively.
+              </li>
+              <li>Adaptive Time-Step Control: Designed algorithms to adjust time-step size dynamically based on reaction kinetics, specifically observing
+                the impacts of activation energy. Demonstrated that faster reaction kinetics necessitated smaller adaptive time-steps for increased solution
+                accuracy.
+              </li>
+              <li>Reaction Kinetics Analysis: Studied reaction kinetics characterized by slow-fast-slow reaction mechanisms. Conducted detailed analyses
+                of concentration and time effects across varying spatial distances, showcasing the critical relationship between reaction rates and 
+                time-step selection.
+              </li>
+              <li>Mesh Independence and Element Size Study: Performed experiments demonstrating that element size variations had minimal effects on time-step
+                adaptations, highlighting the stability of the numerical scheme across mesh configurations.
+              </li>
+            </ul>
+          </div>
+        
+          <div class="project-section">
+            <h2>Outcomes</h2>
+            <ul class="feature-list">
+              <li>Achieved robust and accurate modelling of complex reaction kinetics through adaptive numerical methods.</li>
+              <li>Developed insights into optimizing computational resources by adaptively controlling time-step sizes based on dynamic
+                reaction characteristics.
+              </li>
+            </ul>
+          </div>
+ 
+        
+        <div class="project-navigation">
+          <div></div> <!-- Empty div to maintain spacing with flexbox -->
+          <a href="../index.html#portfolio" class="nav-btn all-projects">
+            All Projects
+          </a>
+          <a href="project2.html" class="nav-btn next-project">
+            Next Project <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Vraj Patel. All rights reserved.</p>
+        <p>
+          Designed and built with
+          <svg class="heart-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+          </svg>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <!-- Initialize KaTeX -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ]
+      });
+    });
+  </script>
+</body>
+</html>

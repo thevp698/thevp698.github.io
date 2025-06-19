@@ -351,9 +351,23 @@ header .container {
 }
 
 .card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-list li {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.card-list i {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-right: 0.5rem;
 }
 
 .check-icon {
@@ -764,4 +778,108 @@ header .container {
   .btn {
     padding: 0.6rem 1.25rem;
   }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.skill-item {
+  position: relative;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-item i {
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.skill-item span {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: left;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  max-width: 250px;
+  white-space: normal;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.education-item i {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-right: 1rem;
+}
+
+.education-details h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.education-details p {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.major {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-top: 0.25rem;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: var(--gray);
+  font-weight: normal;
+}
+
+.achievement-date {
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-left: 0.5rem;
+}
+
+p.paragraph, .timeline-description {
+  text-align: justify;
 }

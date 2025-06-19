@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Professional Portfolio">
   <meta property="og:description" content="Professional portfolio showcasing skills, experience, and projects with a modern, clean design.">
@@ -55,9 +56,10 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
-            <h1 class="heading-1">John Doe</h1>
-            <h2 class="heading-2">Software Engineer</h2>
-            <p class="paragraph">I'm a passionate software developer with expertise in building elegant, user-friendly web applications. With a strong foundation in both frontend and backend technologies, I create seamless digital experiences that solve real-world problems.</p>
+            <h1 class="heading-1">Vraj Patel</h1>
+            <h2 class="heading-2">Chemical Engineer</h2>
+            <p class="paragraph">Hi, welcome to my professional page! I'm an engineer with a deep curiousity for optimization and artificial intelligence. I love bringing together different branches of engineering to solve complex hard problems and build innovative solutions.</p>
+            <p class="paragraph">Outside of work, I'm always doing action things maybe it's bouldering, weightlifting, running or hiking. I also enjoy reading books and essays on history, litrature and biography. If you're up for a coffee chat, want to collaborate on a project, I'm always open to new connections and conversations.</p>
             <div class="btn-container">
               <a href="#portfolio" class="btn btn-primary">View My Work</a>
               <a href="#contact" class="btn btn-outline">Get In Touch</a>
@@ -65,7 +67,7 @@
           </div>
           <div class="hero-image">
             <div class="profile-image">
-              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <img src="images/graduation.JPG" alt="Vraj Patel" style="width: 250px; height: 250px; border-radius: 50%; border: 5px solid var(--white); box-shadow: var(--shadow);">
                 <circle cx="100" cy="100" r="80" fill="#2D3E50" />
                 <circle cx="100" cy="80" r="30" fill="#F5F5F5" />
                 <path d="M100 120 Q 130 120 130 140 Q 130 180 100 180 Q 70 180 70 140 Q 70 120 100 120" fill="#F5F5F5" />
@@ -91,14 +93,48 @@
               </svg>
             </div>
             <h3 class="card-title">Skills</h3>
-            <ul class="card-list">
-              <li><span class="check-icon">✓</span> JavaScript/TypeScript</li>
-              <li><span class="check-icon">✓</span> React.js & React Native</li>
-              <li><span class="check-icon">✓</span> Node.js & Express</li>
-              <li><span class="check-icon">✓</span> HTML5 & CSS3/SCSS</li>
-              <li><span class="check-icon">✓</span> MongoDB & SQL Databases</li>
-              <li><span class="check-icon">✓</span> AWS & Cloud Services</li>
-            </ul>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <span>Programming</span>
+                <div class="tooltip">Python, MATLAB, VBA</div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-tasks"></i>
+                <span>Project Tools</span>
+                <div class="tooltip">JIRA, Agile, Scrum, Sprint Planning</div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-desktop"></i>
+                <span>Software</span>
+                <div class="tooltip">Microsoft Office, HEEDS, Aspen HYSYS, COMSOL, Aspen ONE, Aspen EDR, Simcenter studio</div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-file-alt"></i>
+                <span>Documentation</span>
+                <div class="tooltip">Notion, Markdown, HTML, LaTex, Word</div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Optimization</span>
+                <div class="tooltip">Blackbox Optimization, Derivative free optimization, Nonlinear constrained optimization</div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-laptop"></i>
+                <span>Platforms</span>
+                <div class="tooltip">Microsoft Windows, Linux, MacOS</div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-tools"></i>
+                <span>Tool Development</span>
+                <div class="tooltip">Git, Confluence, unittesting</div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-cubes"></i>
+                <span>Libraries</span>
+                <div class="tooltip">PyTorch, TensorFlow, Matplotlib, Plotly, Numpy, NOMAD, Seaborn, OpenAI Gym, Scikit-learn, OpenCV, Optuna, Pytest, NLTK, Hugging Face, Git, Win32, IDAES, Pyomo</div>
+              </div>
+            </div>
           </div>
           
           <!-- Education Section -->
@@ -110,20 +146,24 @@
               </svg>
             </div>
             <h3 class="card-title">Education</h3>
-            <ul class="card-list education-list">
-              <li>
-                <h4>Master of Computer Science</h4>
-                <p>Stanford University, 2018-2020</p>
-              </li>
-              <li>
-                <h4>Bachelor of Science in Software Engineering</h4>
-                <p>MIT, 2014-2018</p>
-              </li>
-              <li>
-                <h4>Full Stack Web Development Certification</h4>
-                <p>FreeCodeCamp, 2017</p>
-              </li>
-            </ul>
+            <div class="education-grid">
+              <div class="education-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="education-details">
+                  <h4>Master of Engineering <span class="duration">(2022-2023)</span></h4>
+                  <p>McGill University</p>
+                  <p class="major">Chemical Engineering</p>
+                </div>
+              </div>
+              <div class="education-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="education-details">
+                  <h4>Bachelor of Engineering <span class="duration">(2015-2019)</span></h4>
+                  <p>Gujarat Technological University</p>
+                  <p class="major">Chemical Engineering</p>
+                </div>
+              </div>
+            </div>
           </div>
           
           <!-- Achievements Section -->
@@ -134,13 +174,13 @@
                 <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
               </svg>
             </div>
-            <h3 class="card-title">Achievements</h3>
+            <h3 class="card-title">Achievements & Leadership</h3>
             <ul class="card-list">
-              <li><span class="check-icon">✓</span> 1st Place, National Hackathon 2022</li>
-              <li><span class="check-icon">✓</span> Google Developer Expert</li>
-              <li><span class="check-icon">✓</span> Published Research Paper on AI Integration</li>
-              <li><span class="check-icon">✓</span> Speaker at ReactConf 2021</li>
-              <li><span class="check-icon">✓</span> Open Source Contributor</li>
+                <li><i class="fas fa-award"></i> MITACS Research Fellow <span class="achievement-date">(2023–2024)</span></li>
+                <li><i class="fas fa-medal"></i> Graduate Panelist – McGill Winter Orientation <span class="achievement-date">(2023)</span></li>
+                <li><i class="fas fa-user-friends"></i> Orientation Leader – McGill Campus Life & Engagement <span class="achievement-date">(2022)</span></li>
+                <li><i class="fas fa-trophy"></i> GATE – All India Rank 90 (Top 0.5%) <span class="achievement-date">(2020)</span></li>
+                <li><i class="fas fa-lightbulb"></i> Winner – IoT Design Challenge <span class="achievement-date">(2016)</span></li>
             </ul>
           </div>
         </div>
@@ -156,40 +196,30 @@
           <!-- Timeline Item 1 -->
           <div class="timeline-item left">
             <div class="timeline-content">
-              <span class="timeline-date">2022 - Present</span>
-              <h3 class="timeline-title">Senior Software Engineer</h3>
-              <h4 class="timeline-subtitle">Google</h4>
-              <p class="timeline-description">Leading frontend development for key projects, mentoring junior developers, and implementing best practices for code quality and performance optimization.</p>
+              <span class="timeline-date">May 2023 - December 2024 </span>
+              <h3 class="timeline-title">OptiPro Developer</h3>
+              <h4 class="timeline-subtitle">Siemens-Energy</h4>
+              <p class="timeline-description">Worked with the Optimization Tool Development team to execute Desing of Experiments (DOE) for diverse thermodynamic and process optimization projects. Adopted agile methodologies and adhered to industry best practices to support tool development initiatives.</p>
             </div>
           </div>
           
           <!-- Timeline Item 2 -->
           <div class="timeline-item right">
             <div class="timeline-content">
-              <span class="timeline-date">2020 - 2022</span>
-              <h3 class="timeline-title">Full Stack Developer</h3>
-              <h4 class="timeline-subtitle">Facebook</h4>
-              <p class="timeline-description">Developed and maintained critical features for the platform, collaborated with cross-functional teams, and contributed to architectural decisions.</p>
+              <span class="timeline-date">September 2023 - December 2023</span>
+              <h3 class="timeline-title">Teaching Assistant</h3>
+              <h4 class="timeline-subtitle">McGill University</h4>
+              <p class="timeline-description">Served as a core member of the teaching assistant team for COMP 551 course, supporting a class of 250 students through mentorship, academic guidance, and leadership in course delivery.</p>
             </div>
           </div>
           
           <!-- Timeline Item 3 -->
           <div class="timeline-item left">
             <div class="timeline-content">
-              <span class="timeline-date">2018 - 2020</span>
-              <h3 class="timeline-title">Frontend Engineer</h3>
-              <h4 class="timeline-subtitle">Airbnb</h4>
-              <p class="timeline-description">Built responsive user interfaces, implemented complex interactive features, and optimized application performance for millions of users.</p>
-            </div>
-          </div>
-          
-          <!-- Timeline Item 4 -->
-          <div class="timeline-item right">
-            <div class="timeline-content">
-              <span class="timeline-date">2016 - 2018</span>
-              <h3 class="timeline-title">Web Developer Intern</h3>
-              <h4 class="timeline-subtitle">Microsoft</h4>
-              <p class="timeline-description">Assisted in building web applications, gained experience with enterprise-level development practices, and contributed to open source projects.</p>
+              <span class="timeline-date">Januray 2021 - May 2021</span>
+              <h3 class="timeline-title">Graduate Engineer</h3>
+              <h4 class="timeline-subtitle">Amoli Organics</h4>
+              <p class="timeline-description">Facilitated integration between R&D and production teams to scale up laboratory data for SOP development across multiple Active Pharmaceutical Ingredients (APIs). Analyzed inventory logs, raw material usage, and production output to verify compliance with manufacturing protocols and ensure process accuracy.</p>
             </div>
           </div>
         </div>
@@ -200,7 +230,7 @@
     <section id="portfolio" class="portfolio">
       <div class="container">
         <h2 class="section-title">My Portfolio</h2>
-        <p class="section-description">Explore my recent projects that showcase my skills and experience in software development.</p>
+        <p class="section-description">Explore my recent projects that showcase my skills in diverse fields.</p>
         
         <div class="portfolio-grid">
           <!-- Project 1 -->
@@ -212,42 +242,39 @@
               </svg>
             </div>
             <div class="project-content">
-              <h3 class="project-title">E-commerce Platform</h3>
-              <p class="project-description">A full-featured online shopping platform with product management, cart functionality, and secure checkout process.</p>
+              <h3 class="project-title">pyhysys - A Framework for Process Optimization</h3>
+              <p class="project-description">pyhysys is an innovative engineering framework designed to simplify and optimize complex process designs involving multistage unit operations. It leverages a first-principles optimization approach, breaking down intricate processes into smaller, manageable modules, ensuring precise optimization at each stage.</p>
               <div class="project-tags">
-                <span class="project-tag">React.js</span>
-                <span class="project-tag">Node.js</span>
-                <span class="project-tag">MongoDB</span>
-                <span class="project-tag">Stripe</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Win32</span>
+                <span class="project-tag">NOMAD</span>
+                <span class="project-tag">GitLab</span>
+                <span class="project-tag">unit testing</span>
               </div>
-              <a href="https://github.com/johndoe/ecommerce" target="_blank" rel="noopener noreferrer" class="project-link">
-                View Project <span class="arrow-icon">→</span>
+              <a href="projects/pyhysys.html" class="project-link">
+                View Details <span class="arrow-icon">→</span>
               </a>
             </div>
           </div>
-          
           <!-- Project 2 -->
           <div class="project-card">
             <div class="project-icon">
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="24" rx="4" fill="currentColor" fill-opacity="0.2" />
-                <path d="M18 2H6a2 2 0 00-2 2v16c0 1.1.9 2 2 2h12a2 2 0 002-2V4a2 2 0 00-2-2zm-2 10H8v2h8v-2zm0-4H8v2h8V8z" fill="currentColor" />
+                <path d="M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-2h-2v2h-2v-2H9v-2h2v-2h2v2h2v2z" fill="currentColor" />
               </svg>
             </div>
             <div class="project-content">
-              <h3 class="project-title">Task Management App</h3>
-              <p class="project-description">A mobile application that helps users organize tasks, set reminders, and track progress with intuitive UI.</p>
+              <h3 class="project-title">High-Pressure Steam Compression</h3>
+              <p class="project-description">Optimization of high-pressure steam compression systems using advanced process simulation and optimization techniques.</p>
               <div class="project-tags">
-                <span class="project-tag">React Native</span>
-                <span class="project-tag">Firebase</span>
-                <span class="project-tag">Redux</span>
+                <span class="project-tag">Aspen HYSYS</span>
+                <span class="project-tag">Optimization</span>
+                <span class="project-tag">Process Design</span>
               </div>
-              <a href="https://github.com/johndoe/taskmanager" target="_blank" rel="noopener noreferrer" class="project-link">
-                View Project <span class="arrow-icon">→</span>
-              </a>
+              <a href="projects/High-Pressure Steam.html" class="btn btn-outline btn-sm">View Project</a>
             </div>
           </div>
-          
           <!-- Project 3 -->
           <div class="project-card">
             <div class="project-icon">
@@ -265,12 +292,11 @@
                 <span class="project-tag">Express</span>
                 <span class="project-tag">PostgreSQL</span>
               </div>
-              <a href="https://github.com/johndoe/analytics" target="_blank" rel="noopener noreferrer" class="project-link">
+              <a href="https://github.com/thevp698/thevp698.github.io/projects" target="_blank" rel="noopener noreferrer" class="project-link">
                 View Project <span class="arrow-icon">→</span>
               </a>
             </div>
           </div>
-          
           <!-- Project 4 -->
           <div class="project-card">
             <div class="project-icon">
@@ -288,12 +314,11 @@
                 <span class="project-tag">Apollo</span>
                 <span class="project-tag">MongoDB</span>
               </div>
-              <a href="https://github.com/johndoe/socialnetwork" target="_blank" rel="noopener noreferrer" class="project-link">
+              <a href="https://github.com/thevp698/thevp698.github.io/projects" target="_blank" rel="noopener noreferrer" class="project-link">
                 View Project <span class="arrow-icon">→</span>
               </a>
             </div>
           </div>
-          
           <!-- Project 5 -->
           <div class="project-card">
             <div class="project-icon">
@@ -310,12 +335,11 @@
                 <span class="project-tag">Firebase</span>
                 <span class="project-tag">Machine Learning</span>
               </div>
-              <a href="https://github.com/johndoe/fitness" target="_blank" rel="noopener noreferrer" class="project-link">
+              <a href="https://github.com/thevp698/thevp698.github.io/projects" target="_blank" rel="noopener noreferrer" class="project-link">
                 View Project <span class="arrow-icon">→</span>
               </a>
             </div>
           </div>
-          
           <!-- Project 6 -->
           <div class="project-card">
             <div class="project-icon">
@@ -332,7 +356,7 @@
                 <span class="project-tag">OpenWeather API</span>
                 <span class="project-tag">Leaflet.js</span>
               </div>
-              <a href="https://github.com/johndoe/weather" target="_blank" rel="noopener noreferrer" class="project-link">
+              <a href="https://github.com/thevp698/thevp698.github.io/projects" target="_blank" rel="noopener noreferrer" class="project-link">
                 View Project <span class="arrow-icon">→</span>
               </a>
             </div>

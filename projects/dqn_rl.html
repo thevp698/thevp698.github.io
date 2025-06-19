@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Ablation Studies on Deep Q-Learning</title>
+  <meta name="description" content="Detailed information about the E-commerce Platform project, including features, technologies, and development process.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="project-style.css">
+  <!-- Add KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <!-- Add KaTeX JavaScript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="../index.html" class="text-primary font-poppins font-bold text-2xl">Portfolio</a>
+      
+      <!-- Back Button -->
+      <a href="../index.html#portfolio" class="nav-link text-primary font-poppins font-medium">
+        <span class="back-arrow">←</span> Back to Projects
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-detail">
+      <div class="container">
+        <h1 class="project-title">Ablation Studies on Deep Q-Learning</h1>
+          
+          <!-- If you have a live demo or repository link -->
+          <div class="project-links">
+            <a href="https://github.com/yourusername/ecommerce" class="btn btn-outline btn-sm" target="_blank">View Repository</a>
+            <!-- <a href="#" class="btn btn-primary btn-sm" target="_blank">Live Demo</a> -->
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+            Performed comprehensive ablation studies on the Deep Q-Network (DQN) algorithm using two distinct environments: Cartpole (Classic Control) 
+            and Lunar Lander (Box2D). This research explored the internal dynamics and critical components of DQN by systematically removing elements
+            such as the target network, replay memory, and exploration mechanisms.
+            </p>
+          </div>
+          
+          <div class="project-section">
+            <h2>Key Contributions</h2>
+            <ul class="feature-list">
+              <li>Component-wise Analysis: Investigated the impact of individually removing key DQN components-target networks, memory replay, and 
+                epsilon-based exploration-on overall performances. Highlighted the integral roles of these components through rigorous empirical testing.
+              </li>
+              <li>Training Stability Techniques: Implemented soft updates for network weights, effectively reducing variance and stabilizing the learning process.
+                Utilized an epsilon decay algorithm to balance exploration and exploitation dynamically, illustrating its critical importance for consistent reward
+                outcomes.
+              </li>
+              <li>Cross-Environment Comparison: Demonstrated through experimental results that employing identical agents across different environments can be 
+                suboptimal, advocating tailored approaches to each distinct environment.
+              </li>
+              <li>Insights on Network Architectures: Observed that using only a policy network can yield strong results with sufficient training episodes,
+                emphasizing the viability of simplified models under certain conditions.
+              </li>
+            </ul>
+          </div>
+        
+          <div class="project-section">
+            <h2>Outcomes</h2>
+            <ul class="feature-list">
+              <li>Identified memory replay and exploration mechanisms as essential components for DQN effectiveness</li>
+              <li>Recommended adaptive strategies, such as soft weight updates and tailored agents, to ensure robuts and consistent learning
+                performance.
+              </li>
+            </ul>
+          </div>
+ 
+        
+        <div class="project-navigation">
+          <div></div> <!-- Empty div to maintain spacing with flexbox -->
+          <a href="../index.html#portfolio" class="nav-btn all-projects">
+            All Projects
+          </a>
+          <a href="project2.html" class="nav-btn next-project">
+            Next Project <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Vraj Patel. All rights reserved.</p>
+        <p>
+          Designed and built with
+          <svg class="heart-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+          </svg>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <!-- Initialize KaTeX -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ]
+      });
+    });
+  </script>
+</body>
+</html>

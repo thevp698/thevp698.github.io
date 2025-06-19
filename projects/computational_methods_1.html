@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Adaptive Mesh and Basis Function Analysis for Nonlinear Diffusion-Reaction Equations</title>
+  <meta name="description" content="Detailed information about the E-commerce Platform project, including features, technologies, and development process.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="project-style.css">
+  <!-- Add KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <!-- Add KaTeX JavaScript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="../index.html" class="text-primary font-poppins font-bold text-2xl">Portfolio</a>
+      
+      <!-- Back Button -->
+      <a href="../index.html#portfolio" class="nav-link text-primary font-poppins font-medium">
+        <span class="back-arrow">←</span> Back to Projects
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-detail">
+      <div class="container">
+        <h1 class="project-title">Adaptive Mesh and Basis Function Analysis for Nonlinear Diffusion-Reaction Equations</h1>
+          
+          <!-- If you have a live demo or repository link -->
+          <div class="project-links">
+            <a href="https://github.com/yourusername/ecommerce" class="btn btn-outline btn-sm" target="_blank">View Repository</a>
+            <!-- <a href="#" class="btn btn-primary btn-sm" target="_blank">Live Demo</a> -->
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+            Conducted an in-depth numerical investigation of dimensionless nonlinear diffusion-reaction boundary value problems using the Galerkin Finite Element Method (GFEM).
+            The project specifically explored the use of linear and quadratic Lagrange basis functions integrated with a three-point Gaussian Quadrature within a computational 
+            domain of unit length.
+            </p>
+          </div>
+          
+          <div class="project-section">
+            <h2>Key Contributions</h2>
+            <ul class="feature-list">
+              <li>Boundary Value Problem Setup: Addressed the nonlinear-chemical reaction equation:
+                <div class="equation">
+                  $$ \frac{d^{2}C}{dx^{2}} - PC^{3} = 0, $$
+                  with boundary conditions
+                  $$ \left.\frac{dC}{dx}\right|_{x=0} = 0 $$ and $$C(1) = 1.$$
+                </div>
+              </li>
+              <li>Mesh Independence Study: Evaluated how node quantity influences solution accuracy and indetified conditions for achieving mesh independence.
+              Demonstrated that increasing node reduces error significantly up to a thresold after which additional nodes have minimal impact.
+              </li>
+              <li>Mesh Distribution Optimization: Explored effects of non-uniform mesh distributions, identifying strategies for densely packing nodes in 
+              high-gradient regions(steep slopes or boundary layers) and sparsely packing nodes in low-gradient regions. Determined that careful node placement
+              significantly enhances solution precision.
+              </li>
+              <li>Basis Function Comparative Analysis: Conducted comparative experiments between linear and quadratic basis functions, 
+              concluding quadratic basis functions require fewer nodes for similar accuracy. Highlighted the necessity of function behavior-based node spacing 
+              rather than arbitrary selection.
+              </li>
+            </ul>
+          </div>
+        
+          <div class="project-section">
+            <h2>Outcomes</h2>
+            <ul class="feature-list">
+              <li>Established qualitative insights into selecting optimal mesh and basis function strategies.</li>
+              <li>Defined clear guidelines for balancing computational efficiency and solution accuracy in solving nonlinear diffusion-reaction equations.</li>
+            </ul>
+          </div>
+ 
+        
+        <div class="project-navigation">
+          <div></div> <!-- Empty div to maintain spacing with flexbox -->
+          <a href="../index.html#portfolio" class="nav-btn all-projects">
+            All Projects
+          </a>
+          <a href="project2.html" class="nav-btn next-project">
+            Next Project <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Vraj Patel. All rights reserved.</p>
+        <p>
+          Designed and built with
+          <svg class="heart-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+          </svg>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <!-- Initialize KaTeX -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ]
+      });
+    });
+  </script>
+</body>
+</html>
