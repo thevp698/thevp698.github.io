@@ -113,3 +113,37 @@ document.head.appendChild(style);
 
 window.addEventListener('scroll', checkScroll);
 window.addEventListener('load', checkScroll);
+
+// Project navigation script
+document.addEventListener('DOMContentLoaded', function() {
+    // Define the order of projects
+    const projectOrder = [
+        'pyhysys.html',
+        'ai_disaster_tweet.html',
+        'combinatorial_optimization_HRU.html',
+        'computational_methods_1.html',
+        'computational_methods_2.html',
+        'dqn_rl.html',
+        'High-Pressure Steam.html',
+        'LLM_rec.html',
+        'MDO_braking_system.html'
+    ];
+
+    // Get current page filename
+    const currentPage = window.location.pathname.split('/').pop();
+    
+    // Find current project index
+    const currentIndex = projectOrder.indexOf(currentPage);
+    
+    if (currentIndex !== -1) {
+        // Calculate next project index (loop back to first if at end)
+        const nextIndex = (currentIndex + 1) % projectOrder.length;
+        const nextProject = projectOrder[nextIndex];
+        
+        // Update the "Next Project" link
+        const nextProjectLink = document.querySelector('.next-project');
+        if (nextProjectLink) {
+            nextProjectLink.href = nextProject;
+        }
+    }
+});
